@@ -1,0 +1,319 @@
+<?php
+
+/* @var $this yii\web\View */
+use yii\helpers\Url;
+$this->title = 'Incarnet';
+?>
+<main class="index-page ">
+    <div class="block1-wrap">
+        <section class="index-block1 container">
+            <div class="row ">
+                <div class="col-lg-11 offset-lg-1">
+                    <h1 class="index-title">рассказывай об&nbsp;incarnet,
+                        продавай incarnet,
+                        Зарабатывай <span class="number_span">9&nbsp;999</span> рублей
+                        вместе с&nbsp;incarnet</h1>
+                    <p class="block1-desc">Регистрируйся на&nbsp;портале и&nbsp;становись участником новой реферальной программы Incarnet.</p>
+                    <a href="<?= Url::toRoute(['site/signup']) ?>" class="button-custom seleted-btn">Зарегистрироваться</a>
+                    <button type="button" class="next-button">далее</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="index-block2 container">
+        <div class="row">
+            <div class="offset-lg-1 col-lg-11">
+                <h2 class="block2-title">Стань рефери <span>incarnet</span>,
+                    и&nbsp;начни зарабатывать</h2>
+            </div>
+            <div class="col-lg-6 offset-lg-1 center-column">
+                <ul class="block2-list">
+                    <li class="block2-item">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 34C0 15.2223 15.2223 0 34 0V0C52.7777 0 68 15.2223 68 34V34C68 52.7777 52.7777 68 34 68V68C15.2223 68 0 52.7777 0 34V34Z" fill="#F3F7FB"/>
+                            <path d="M9 62L21 38L25.1 42.6L34.6 25.2L39 31L50 19" stroke="#D8E4F2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 62L22 48L26.1 52.6L35.6 35.2L42 42L65 15" stroke="#D8E4F2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M59 15H65V21" stroke="#D8E4F2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M44 19H50V25" stroke="#D8E4F2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M65 42L56.1 33L50.8 55.5L41 48L34 55.4L9 62" stroke="#D8E4F2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M65 36V42H59" stroke="#D8E4F2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M65 61H7V3" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M61 57L65 61L61 65" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 7L7 3L11 7" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 61L19 37L23.1 41.6L32.6 24.2L37 30L48 18" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 61L20 47L24.1 51.6L33.6 34.2L40 41L63 14" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M57 14H63V20" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M42 18H48V24" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M63 41L54.1 32L48.8 54.5L39 47L32 54.4L7 61" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M63 35V41H57" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <div class="block2-item_wrap">
+                            <h3 class="title">Зарабатывать много</h3>
+                            <p class="desc">5&nbsp;000, 10&nbsp;000, 30&nbsp;000 ... рублей в&nbsp;месяц&nbsp;&mdash;
+                                <span>это не&nbsp;предел</span>. Чем больше людей знают
+                                об&nbsp;Incarnet, тем больше у&nbsp;тебя денег.</p>
+                        </div>
+                    </li>
+                    <li class="block2-item">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 34C0 15.2223 15.2223 0 34 0V0C52.7777 0 68 15.2223 68 34V34C68 52.7777 52.7777 68 34 68V68C15.2223 68 0 52.7777 0 34V34Z" fill="#F3F7FB"/>
+                            <path d="M65 12H41V30H65L59 21L65 12Z" fill="#D8E4F2"/>
+                            <path d="M16 19C19.3137 19 22 16.3137 22 13C22 9.68629 19.3137 7 16 7C12.6863 7 10 9.68629 10 13C10 16.3137 12.6863 19 16 19Z" fill="#D8E4F2"/>
+                            <path d="M16 15C19.3137 15 22 12.3137 22 9C22 5.68629 19.3137 3 16 3C12.6863 3 10 5.68629 10 9C10 12.3137 12.6863 15 16 15Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 39V22C4 18.7 6.7 16 10 16H22C25.3 16 28 18.7 28 22V39" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24 26V59H8V26" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 59V39" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M65 7H41V25H65L59 16L65 7Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M41 53H37V5C37 3.9 37.9 3 39 3C40.1 3 41 3.9 41 5V53Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M45 18V14" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M27 59H5V65H27V59Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M49 53H27V59H49V53Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M65 53H49V47H65" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 55H24" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <div class="block2-item_wrap">
+                            <h3 class="title">Это легко!</h3>
+                            <p class="desc">Всего 4&nbsp;шага и&nbsp;ты&nbsp;начнешь получать доход,
+                                размер которого решаешь ты&nbsp;сам</p>
+                        </div>
+                    </li>
+                    <li class="block2-item">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 34C0 15.2223 15.2223 0 34 0V0C52.7777 0 68 15.2223 68 34V34C68 52.7777 52.7777 68 34 68V68C15.2223 68 0 52.7777 0 34V34Z" fill="#F3F7FB"/>
+                            <path d="M32 59C43.598 59 53 49.598 53 38C53 26.402 43.598 17 32 17C20.402 17 11 26.402 11 38C11 49.598 20.402 59 32 59Z" fill="#D8E4F2"/>
+                            <path d="M34.2 63C34.1 63 34.1 63 34 63" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M58.8 19C61.5 23.4 63 28.5 63 34C63 48.8 51.8 61.1 37.5 62.8" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M33.7 5C33.8 5 33.9 5 34 5" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.2 49C6.5 44.6 5 39.5 5 34C5 19.2 16.1 6.99995 30.5 5.19995" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 59C47.8071 59 59 47.8071 59 34C59 20.1929 47.8071 9 34 9C20.1929 9 9 20.1929 9 34C9 47.8071 20.1929 59 34 59Z" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 55C45.598 55 55 45.598 55 34C55 22.402 45.598 13 34 13C22.402 13 13 22.402 13 34C13 45.598 22.402 55 34 55Z" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 9H65" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M59 3L65 9L59 15" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 59H3" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 65L3 59L9 53" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 32V23" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M32.2999 35L23.7 40.3" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 16V18" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 50V52" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M52 34H50" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 34H16" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M43 18.4L42 20.1" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M26 47.9L25 49.6" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M49.5999 43L47.8999 42" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.0999 26L18.3999 25" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M49.5999 25L47.8999 26" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.0999 42L18.3999 43" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M43 49.6L42 47.9" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M26 20.1L25 18.4" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 36C35.1046 36 36 35.1046 36 34C36 32.8954 35.1046 32 34 32C32.8954 32 32 32.8954 32 34C32 35.1046 32.8954 36 34 36Z" stroke="#587BC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <div class="block2-item_wrap">
+                            <h3 class="title">И&nbsp;самому распоряжаться своим временем</h3>
+                            <p class="desc">Дополнительный заработок можно и&nbsp;нужно совмещать с&nbsp;основной работой или учебой.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-5 no-padding-mob display-center">
+                <form method="get" action="/site/signup" class="block2-form">
+                    <h3 class="form2-title">Начнём?</h3>
+                    <p class="form2-desc">Заполни форму и&nbsp;начни зарабатывать сразу&nbsp;после&nbsp;регистрации</p>
+                    <input class="form2-input"  type="text" name="name" placeholder="Имя" required>
+                    <input class="form2-input phone-mask" type="tel" name="phone" placeholder="+7 XXX XXX XX XX" required>
+                    <input class="form2-input" type="email" name="email" placeholder="Email" required>
+                    <button type="submit" class="button-custom seleted-btn form2-btn">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="index-block3 container">
+        <h2 class="block3-title">Что&nbsp;такое&nbsp;<span>Incarnet</span></h2>
+        <h3 class="block3-subtitle no-padding-mob"><span class="mobile-hidden">&mdash;&nbsp;</span>Решение, которое обеспечивает высокоскоростной доступ
+            <a href="//incarnet.ru/promo/">в&nbsp;интернет в&nbsp;автомобилях</a></h3>
+        <div class="row block3-wrap">
+            <div class="col-lg-10 offset-lg-1">
+                <h2 class="block3-title_wrap">
+                    Стабильное подключение
+                    в&nbsp;движении&nbsp;<span>&mdash; непростая задача.</span>
+                </h2>
+                <p class="block3-desc1">
+                    Маршрутизаторы <span>Incarnet ViH</span> решают эту проблему, сохраняя стабильное соединение
+                    в&nbsp;дороге там, где обычные мобильные устройства не&nbsp;справляются.
+                </p>
+                <p class="block3-desc2">
+                    Решение разработано специально для автомобилей: устойчивы к&nbsp;перепадам температуры, тряске и&nbsp;другим дорожным условиям.
+                </p>
+                <img src="<?=Yii::getAlias('@web')?>/front/dist/uploads/car_mob.svg" alt="" class="desctop-hidden mobile-car">
+            </div>
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square3"></div>
+            <div class="square4"></div>
+
+            <div class="info-cont info-cont1 info-cont_close">
+                <button type="button" class="info-btn info-close"></button>
+                <p class="info-desc">Маршрутизатор объединяет мощности четырех, шести и восьми SIM-карт в&nbsp;один бесперебойный сигнал</p>
+            </div>
+            <div class="info-cont info-cont2 info-cont_close">
+                <button type="button" class="info-btn info-close"></button>
+                <p class="info-desc">К&nbsp;маршрутизатору легко подключаются абсолютно все устройства, независимо
+                    от&nbsp;ПО</p>
+            </div>
+            <div class="info-cont info-cont3 info-cont_close">
+                <button type="button" class="info-btn info-close"></button>
+                <p class="info-desc">Гарантирует стабильный доступ
+                    в&nbsp;интернет даже на&nbsp;скорости
+                    120&nbsp;км/ч</p>
+            </div>
+        </div>
+    </section>
+    <section class="index-block5 container">
+        <h2 class="block5-title"><span><span class="number_span">4</span> шага</span> к деньгам</h2>
+        <ul class="row block5-list">
+            <li class="col-lg-3 block5-item">
+                <div class="img-cont">
+                    <svg width="64" height="50" viewBox="0 0 64 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63 3H1V11H63V3Z" fill="#D8E4F2"/>
+                        <path d="M43 29H7C5.9 29 5 29.9 5 31C5 32.1 5.9 33 7 33H43V38C43 39.1 43.9 40 45 40H53C54.1 40 55 39.1 55 38V24C55 22.9 54.1 22 53 22H45C43.9 22 43 22.9 43 24V29Z" fill="#D8E4F2"/>
+                        <path d="M63 1H1V49H63V1Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 9H63" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M47 1V9" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M45 31V36C45 37.1 45.9 38 47 38H55C56.1 38 57 37.1 57 36V22C57 20.9 56.1 20 55 20H47C45.9 20 45 20.9 45 22V27" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M53 34V24H49V34H53Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M45 31H9C7.9 31 7 30.1 7 29C7 27.9 7.9 27 9 27H45" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 31H11V38H23V31Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 34V38" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 36V38" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p class="step">Шаг 1:</p>
+                <p class="step-name">Зарегистрируйся</p>
+                <p class="step-desc">Зарегистрируйся на&nbsp;портале Incarnet, чтобы получить статус рефери</p>
+            </li>
+            <li class="col-lg-3 block5-item">
+                <div class="img-cont">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28 21H40L45 27L46 21H56C57.1 21 58 20.1 58 19V7C58 5.9 57.1 5 56 5H12C10.9 5 10 5.9 10 7V19C10 20.1 10.9 21 12 21H22L23 27L28 21Z" fill="#D8E4F2"/>
+                        <path d="M14 43C18.9706 43 23 38.9706 23 34C23 29.0294 18.9706 25 14 25C9.02944 25 5 29.0294 5 34C5 38.9706 9.02944 43 14 43Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 63H5C2.8 63 1 61.2 1 59V56C1 48.8 6.8 43 14 43C21.2 43 27 48.8 27 56V59C27 61.2 25.2 63 23 63Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 47.9C10.2 47.8 10.3 47.8 10.5 47.7" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 56C5 54.8 5.3 53.6 5.7 52.5C6.1 51.6 6.6 50.7 7.3 50" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M50 43C54.9706 43 59 38.9706 59 34C59 29.0294 54.9706 25 50 25C45.0294 25 41 29.0294 41 34C41 38.9706 45.0294 43 50 43Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M59 63H41C38.8 63 37 61.2 37 59V56C37 48.8 42.8 43 50 43C57.2 43 63 48.8 63 56V59C63 61.2 61.2 63 59 63Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M46 47.9C46.2 47.8 46.3 47.8 46.5 47.7" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M41 56C41 54.8 41.3 53.6 41.7 52.5C42.1 51.6 42.6 50.8 43.3 50" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M26 17H38L43 23L44 17H54C55.1 17 56 16.1 56 15V3C56 1.9 55.1 1 54 1H10C8.9 1 8 1.9 8 3V15C8 16.1 8.9 17 10 17H20L21 23L26 17Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 7H45" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 11H37" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
+                <p class="step">Шаг 2:</p>
+                <p class="step-name">РАССКАЖИ всем</p>
+                <p class="step-desc">Расскажи всем о&nbsp;решении Incarnet
+                    для&nbsp;автомобилей</p>
+            </li>
+            <li class="col-lg-3 block5-item">
+                <div class="img-cont">
+                    <svg width="46" height="64" viewBox="0 0 46 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 6H37V52H9V6H30Z" fill="#D8E4F2"/>
+                        <path d="M31 9H15C14.4 9 14 8.6 14 8V2C14 1.4 14.4 1 15 1H31C31.6 1 32 1.4 32 2V8C32 8.6 31.6 9 31 9Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M32 3H43C44.1 3 45 3.9 45 5V61C45 62.1 44.1 63 43 63H3C1.9 63 1 62.1 1 61V5C1 3.9 1.9 3 3 3H14" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M32 7H41V59H5V7H14" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 18H35" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 24H35" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 30H35" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 36H23" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35 44L29 50L26 47" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 1V3" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M27 1V3" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
+                <p class="step">Шаг 3:</p>
+                <p class="step-name">Заполни заявки</p>
+                <p class="step-desc">Заполни заявки от&nbsp;всех желающих.
+                    Укажи ФИО, номер телефона
+                    и&nbsp;модель устройства</p>
+            </li>
+            <li class="col-lg-3 block5-item">
+                <div class="img-cont">
+                    <svg width="64" height="62" viewBox="0 0 64 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 29V11C8.1 11 9 10.1 9 9H59C59 10.1 59.9 11 61 11V29C59.9 29 59 29.9 59 31H9C9 29.9 8.1 29 7 29Z" fill="#D8E4F2"/>
+                        <path d="M62 31H2C1.4 31 1 30.6 1 30V2C1 1.4 1.4 1 2 1H62C62.6 1 63 1.4 63 2V30C63 30.6 62.6 31 62 31Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 25V7C6.1 7 7 6.1 7 5H57C57 6.1 57.9 7 59 7V25C57.9 25 57 25.9 57 27H7C7 25.9 6.1 25 5 25Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M32 23C35.3137 23 38 19.866 38 16C38 12.134 35.3137 9 32 9C28.6863 9 26 12.134 26 16C26 19.866 28.6863 23 32 23Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 18C15.1046 18 16 17.1046 16 16C16 14.8954 15.1046 14 14 14C12.8954 14 12 14.8954 12 16C12 17.1046 12.8954 18 14 18Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M50 18C51.1046 18 52 17.1046 52 16C52 14.8954 51.1046 14 50 14C48.8954 14 48 14.8954 48 16C48 17.1046 48.8954 18 50 18Z" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M32 31V61" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 61H63" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M42 36V61" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M52 47V61" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 36V61" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 47V61" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 52L12 47L17 52" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17 41L22 36L27 41" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M47 52L52 47L57 52" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M37 41L42 36L47 41" stroke="#587BC9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p class="step">Шаг 4:</p>
+                <p class="step-name">Получи бонусы</p>
+                <p class="step-desc">Получай ХХХ за&nbsp;каждое проданное устройство. Подробности в&nbsp;договоре оферты.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="index-block6 container">
+        <div class="row">
+            <div class="col-lg-7 block6-wrap">
+
+            </div>
+            <div class="col-lg-5">
+                <h2 class="block6-title">Дальше <span>будем работать мы</span></h2>
+                <ul class="block6-list">
+                    <li class="block6-item">
+                        Мы&nbsp;свяжемся с&nbsp;потенциальным клиентом
+                        по&nbsp;указанному тобой номеру телефона.
+                    </li>
+                    <li class="block6-item">
+                        Подробно расскажем о&nbsp;нашем решении
+                        и&nbsp;ответим на&nbsp;все его вопросы.
+                    </li>
+                    <li class="block6-item">
+                        Укомплектуем и&nbsp;отправим ему заказ
+                        в&nbsp;течении 3&nbsp;дней
+                    </li>
+                    <li class="block6-item">
+                        После того, как он&nbsp;оплатит, мы&nbsp;начислим
+                        тебе вознаграждение* (см.&nbsp;в&nbsp;<a href="<?=Url::toRoute(['site/index'])?>">личном кабинете</a>).
+                    </li>
+
+                </ul>
+                <p class="block6-desc">Деньги мы&nbsp;выплачиваем ежемесячно
+                    15&nbsp;числа на&nbsp;банковскую карту, указанную тобой в&nbsp;личном кабинете.</p>
+            </div>
+        </div>
+    </section>
+    <section class="index-block7 container">
+        <div class="block7-cont"></div>
+        <h2 class="block7-title"><span>Сделай</span> первый&nbsp;шаг</h2>
+        <form method="get" action="/site/signup?r=site%2Fsignup" class="block7-form">
+            <div class="block7-wrap">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="text" name="surname" placeholder="Фамилия">
+            </div>
+            <div class="block7-wrap">
+                <input class="phone-mask" type="tel" name="phone" placeholder="Телефон" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+            </div>
+            <p class="form7-desc">
+                Нажимая на кнопку, вы соглашаетесь с условиями <a href="/docs/oferta.pdf" target="_blank">оферты</a>&nbsp;и даете согласие на обработку персональных данных
+            </p>
+            <button type="submit" class="button-custom seleted-btn form7-btn">Регистрация</button>
+        </form>
+        <img src="<?=Yii::getAlias('@web')?>/front/dist/uploads/block7_mob.svg" alt="" class="desctop-hidden">
+    </section>
+</main>

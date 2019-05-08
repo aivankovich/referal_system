@@ -1,0 +1,38 @@
+.avt-page {
+  padding-top: 92px;
+  min-height: 80vh;
+  background: url(../uploads/avt-bg.svg) no-repeat;
+  background-position: 35% center;
+
+  .page-title {
+    position: relative;
+    z-index: -1;
+  }
+}
+
+.avt-list {
+  display: flex;
+  background: white;
+  border-radius: 40px;
+  border: 1px solid rgba(216, 228, 242, 0.3);
+}
+
+.avt-item  a{
+  font-family: LB, Arial, sans-serif;
+  font-size: 10px;
+  color: #333333;
+  line-height: 100%;
+  letter-spacing: 2x;
+  text-transform: uppercase;
+  transition: $anim;
+  padding: 12px 72px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: $blue;
+    color: white;
+  }
+}

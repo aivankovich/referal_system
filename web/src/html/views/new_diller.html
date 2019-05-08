@@ -1,0 +1,117 @@
+<% var data = {
+title: "Incarnet",
+}; %>
+<%= _.template(require('./../includes/header_login.html'))(data) %>
+<main class="new-diller_page">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="report-date-cont">
+                    <h1 class="page-title">Заявка на&nbsp;подключение</h1>
+                    <div class="date-wrap">
+                        <button type="button" class="button-custom new-diller_btn btn1 new-diller-selected">Физ.&nbsp;лица</button>
+                        <button type="button" class="button-custom new-diller_btn btn2">Юр.&nbsp;лица</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form method="post" class="row new-diller_form new-diller_form_selected new-diller_form_1">
+            <fieldset class="col-lg-4 offset-lg-1">
+                <legend class="page-subtitle">Контактная информация</legend>
+                <div class="input-wrap">
+                    <input type="text" name="Заявка диллер физлица фамилия" class="input-custom" placeholder="Фамилия">
+                    <input type="text" name="Заявка диллер физлица имя" class="input-custom" placeholder="Имя и отчество">
+                </div>
+                <input type="tel" name="Заявка диллер физлица телефон" class="input-custom" placeholder="Телефон">
+                <input type="mail" name="заявка диллер физлица почта" class="input-custom" placeholder="E-mail">
+            </fieldset>
+            <fieldset class="col-lg-4">
+                <legend class="page-subtitle">Адрес подключения</legend>
+                <div  class="select-cont">
+                    <select name="Заявка диллер физлица город" class="select-custom city-select">
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Москва">Москва</option>
+                    </select>
+                    <div class="mdi mdi-chevron-down"></div>
+                </div>
+                <input type="text" name="заявка диллер физлица улица" class="input-custom" placeholder="Улица">
+                <div class="input-wrap input_nowrap">
+                    <input type="text" name="Заявка диллер физлица дом" class="input-custom" placeholder="Дом">
+                    <input type="text" name="Заявка диллер физлица квартира" class="input-custom" placeholder="Квартира">
+                </div>
+            </fieldset>
+            <fieldset class="col-lg-2 radio-form_wrap">
+                <legend class="page-subtitle">Выбор решения</legend>
+                <div class="lines-div">
+                    <div class="radio-wrap line-up">
+                        <input id="radio1" type="radio" name="Выбор диллер физлица vi4" class="radio-custom">
+                        <label for="radio1" class="radio-label">Incarnet Vi4</label>
+                    </div>
+                    <div class="radio-wrap">
+                        <input id="radio2" type="radio" name="Выбор диллер физлица vi4" class="radio-custom">
+                        <label for="radio2" class="radio-label">Incarnet Vi6</label>
+                    </div>
+                    <div class="radio-wrap">
+                        <input id="radio3" type="radio" name="Выбор диллер физлица vi4" class="radio-custom">
+                        <label for="radio3" class="radio-label">Incarnet Vi8</label>
+                    </div>
+                    <div class="radio-wrap line-bottom">
+                        <input id="radio4" type="radio" name="Выбор диллер физлица vi4" class="radio-custom">
+                        <label for="radio4" class="radio-label">Не определился</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="col-lg-10 offset-lg-1 line-div"></div>
+            <p class="page-desc">Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь на&nbsp;обработку <a href="politic.html">персональных данных</a></p>
+            <button type="submit" class="button-custom  seleted-btn">Оставить заявку</button>
+        </form>
+        <form method="post" class="row new-diller_form new-diller_form_2">
+            <fieldset class="col-lg-4 offset-lg-1">
+                <legend class="page-subtitle">Контактная информация</legend>
+                <div class="input-wrap">
+                    <input type="text" name="Заявка диллер юрлица фамилия" class="input-custom" placeholder="Фамилия">
+                    <input type="text" name="Заявка диллер юрлица имя" class="input-custom" placeholder="Имя и отчество">
+                </div>
+                <input type="tel" name="Заявка диллер юрлица телефон" class="input-custom" placeholder="Телефон">
+                <input type="mail" name="заявка диллер юрлица почта" class="input-custom" placeholder="E-mail">
+            </fieldset>
+            <fieldset class="col-lg-4">
+                <legend class="page-subtitle">Адрес организации</legend>
+                <div class="select-cont">
+                    <select name="Заявка диллер физлица город" class="select-custom city-select">
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Москва">Москва</option>
+                    </select>
+                    <div class="mdi mdi-chevron-down"></div>
+                </div>
+                <input type="text" name="заявка диллер юрлица название организации" class="input-custom" placeholder="Наименование организации">
+                <input type="text" name="заявка диллео юрлица инн организации" class="input-custom" placeholder="ИНН организации">
+            </fieldset>
+            <fieldset class="col-lg-2 radio-form_wrap">
+                <legend class="page-subtitle">Выбор решения</legend>
+                <div class="lines-div">
+                    <div class="radio-wrap line-up">
+                        <input id="radio5" type="radio" name="Выбор диллер юрлица vi5" class="radio-custom">
+                        <label for="radio5" class="radio-label">Incarnet Vi4</label>
+                    </div>
+                    <div class="radio-wrap">
+                        <input id="radio6" type="radio" name="Выбор диллер юрлица vi5" class="radio-custom">
+                        <label for="radio6" class="radio-label">Incarnet Vi6</label>
+                    </div>
+                    <div class="radio-wrap">
+                        <input id="radio7" type="radio" name="Выбор диллер юрлица vi5" class="radio-custom">
+                        <label for="radio7" class="radio-label">Incarnet Vi8</label>
+                    </div>
+                    <div class="radio-wrap line-bottom">
+                        <input id="radio8" type="radio" name="Выбор диллер юрлица vi5" class="radio-custom">
+                        <label for="radio8" class="radio-label">Не определился</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="col-lg-10 offset-lg-1 line-div"></div>
+            <p class="page-desc">Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь на&nbsp;обработку <a href="politic.html">персональных данных</a></p>
+            <button type="submit" class="button-custom  seleted-btn">Оставить заявку</button>
+        </form>
+    </div>
+</main>
+<%= _.template(require('./../includes/footer.html'))(data) %>

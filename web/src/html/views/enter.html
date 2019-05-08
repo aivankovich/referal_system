@@ -1,0 +1,23 @@
+<% var data = {
+  title: "Incarnet",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="avtorizstion-page">
+  <div class="container">
+    <h1 class="page-title">Вход</h1>
+    <div class="row  justify-content-center">
+      <form method="get" class="avtorization-form">
+        <input name="avt-login" required autofocus type="text" class="login-input input-custom" placeholder="Логин или ваш e-mail">
+        <input name="avt-password" required type="password" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" class="password-input input-custom" placeholder="Пароль">
+        <span class="valid mdi mdi-alert">Неверный логин или пароль</span>
+        <button type="submit" class="button-custom seleted-btn">Войти</button>
+        <a href="registration.html" class="button-custom border-btn">Регистрация</a>
+      </form>
+
+    </div>
+  </div>
+</main>
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

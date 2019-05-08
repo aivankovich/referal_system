@@ -1,0 +1,141 @@
+<% var data = {
+title: "Incarnet",
+message: "Внимание! Обязательно заполните все данные, для того что&nbsp;бы мы&nbsp;могли беспрепятственно и&nbsp;в&nbsp;срок выплатить Вам вознаграждение.",
+}; %>
+<%= _.template(require('./../includes/header_manager.html'))(data) %>
+<main class="profile-diller_page">
+    <div class="container">
+        <%= _.template(require('./../includes/message.html'))(data) %>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="report-date-cont">
+                    <h1 class="page-title">Профиль</h1>
+                    <div class="date-wrap">
+                        <p class="date-id">
+                            <span class="date-id_title">Ваш ID&nbsp;</span>
+                            <span class="date-id_number">1000153881</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form method="get" class="row profile-diller_form ">
+            <filedset class="col-lg-4 offset-lg-2">
+                <legend class="page-subtitle">Контактная информация</legend>
+                <div class="input-wrap">
+                     <input required type="text" name="Менеджер профиль фамиилия" class="input-custom" placeholder="Фамилия">
+                    <input required type="text" name="Менеджер профиль имя" class="input-custom" placeholder="Имя и отчество">
+                </div>
+                <input required type="tel" name="Менеджер профиль телефон" class="input-custom" placeholder="Телефон">
+                <input required type="mail" name="Менеджер профиль почта" class="input-custom" placeholder="E-mail">
+                <div class="input-wrap">
+                    <div class="tooltip-wrap">
+                        <input pattern="^[ 0-9]+$" type="text" name="Менеджер профиль инн" class="input-custom" placeholder="ИНН">
+                        <button type="button" class="tooltip-btn" data-toggle="tooltip" data-placement="bottom" title="Документ, содержащий цифровой шифр, присваивающийся всем плательщикам налогов">?</button>
+                    </div>
+                    <input required pattern="^[ 0-9]+$" type="text" name="Менеджер профиль снилс" class="input-custom no-right-margin" placeholder="СНИЛС">
+                </div>
+            </filedset>
+            <fieldset class="col-lg-4 ">
+                <legend class="page-subtitle">Паспорт</legend>
+                <div class="input-wrap">
+                    <input required type="text" pattern="^[ 0-9]+$" name="Менеджер серия паспотра" class="input-custom" placeholder="Серия и номер">
+                    <div class="date-wrap">
+                        <input required pattern="^[ 0-9]+$" type="text" name="Менеджер дата паспорта" class="hidden-date_year" placeholder="Дата выдачи">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"/>
+                        </svg>
+                    </div>
+
+                </div>
+                <input required type="text" name="Менеджер паспорт кем выдан" class="input-custom" placeholder="Кем выдан">
+                <div class="input-wrap">
+                    <input required type="text" pattern="^[ 0-9]+$" name="Менеджер паспорт кем выдан" class="input-custom" placeholder="Код подразделения">
+                    <div class="date-wrap">
+                        <input required type="text" name="Менеджер дата рождения" class="hidden-date_year" placeholder="Дата рождения">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"/>
+                        </svg>
+                    </div>
+
+                </div>
+            </fieldset>
+            <fieldset class="col-lg-4 offset-lg-2">
+                <legend class="page-subtitle">Адрес регистрации</legend>
+                <div class="select-cont">
+                    <select name="Менеджер регион регистрации" class="select-custom region-select" required>
+
+                    </select>
+                    <div class="mdi mdi-chevron-down"></div>
+                </div>
+                <div class="select-cont">
+                    <select name="Менеджер город регистрации " class="select-custom city-select" required>
+
+                    </select>
+                    <div class="mdi mdi-chevron-down"></div>
+                </div>
+                <div class="select-cont">
+                    <select name="Менеджер улица регистрации" class="select-custom street-select" required>
+
+                    </select>
+                    <div class="mdi mdi-chevron-down"></div>
+                </div>
+
+                <div class="input-wrap">
+                    <input required type="text" class="input-custom" name="Регистрация дом" placeholder="Дом">
+                    <input required pattern="^[ 0-9]+$" type="text" class="input-custom" name="Регистрация строение" placeholder="Строение">
+                </div>
+                <div class="input-wrap">
+                    <input required pattern="^[ 0-9]+$" type="text" class="input-custom" name="Регистрация корпус" placeholder="Корпус">
+                    <input required pattern="^[ 0-9]+$" type="text" class="input-custom" name="Регистрация квартира" placeholder="Квартира">
+                </div>
+            </fieldset>
+            <fieldset class="col-lg-4">
+                <legend class="page-subtitle">Адрес проживания</legend>
+                <div class="select-cont">
+                    <select name="Менеджер регион проживания" class="select-custom region-select" required>
+
+                    </select>
+                    <div class="mdi mdi-chevron-down"></div>
+                </div>
+                <div class="select-cont">
+                    <select name="Менеджер город проживания " class="select-custom city-select" required>
+
+                    </select>
+                    <div class="mdi mdi-chevron-down"></div>
+                </div>
+                <div class="select-cont">
+                    <select name="Менеджер улица проживания" class="select-custom street-select" required>
+
+                    </select>
+                    <div class="mdi mdi-chevron-down"></div>
+                </div>
+                <div class="input-wrap">
+                    <input required type="text" class="input-custom" name="Проживание дом" placeholder="Дом">
+                    <input required pattern="^[ 0-9]+$" type="text" class="input-custom" name="Проживание строение" placeholder="Строение">
+                </div>
+                <div class="input-wrap">
+                    <input required pattern="^[ 0-9]+$" type="text" class="input-custom" name="Проживание корпус" placeholder="Корпус">
+                    <input required pattern="^[ 0-9]+$" type="text" class="input-custom" name="Проживание квартира" placeholder="Квартира">
+                </div>
+            </fieldset>
+            <div class="col-lg-10 offset-lg-2">
+                <h3 class="page-subtitle">Банковские реквизиты</h3>
+                <p class="page-desc">Обратите внимание, что вознаграждение будет перечислено только в&nbsp;том случае, если вы&nbsp;укажете данные своей банковской карты</p>
+            </div>
+            <fieldset class="col-lg-4 offset-lg-2">
+                <input required type="text" pattern="^[ 0-9]+$" name="Менеджер бик" class="input-custom" placeholder="БИК">
+                <p class="small-label">Укажите БИК именно того отделения банка, в&nbsp;котором у&nbsp;вас открыт р/с и&nbsp;выдана банковская карта</p>
+                <input required type="text" name="Менеджер банк" class="input-custom" placeholder="Банк">
+            </fieldset>
+            <fieldset class="col-lg-4">
+                <input required type="text" pattern="^[ 0-9]+$" name="Менеджер расч.счет" class="input-custom" placeholder="Расч. счет">
+                <p class="small-label">Уточнить в&nbsp;Банке, который выпустил Вашу банковскую карту</p>
+                <input required type="text" name="Менеджер кор.счет" class="input-custom" placeholder="Кор. счет">
+            </fieldset>
+            <div class="underline-div col-lg-8 offset-lg-2"></div>
+            <button type="submit" class="button-custom seleted-btn">Обновить профиль</button>
+        </form>
+    </div>
+</main>
+<%= _.template(require('./../includes/footer.html'))(data) %>

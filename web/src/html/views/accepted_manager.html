@@ -1,0 +1,1058 @@
+<% var data = {
+title: "Incarnet",
+}; %>
+<%= _.template(require('./../includes/header_manager.html'))(data) %>
+<main class="new-manager_page accepted-manager_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-container">
+                    <div class="table-container_top">
+                        <h1 class="page-title">Принятые заявки</h1>
+                        <div class="table-container_right">
+                            <p class="counter-slides">
+                                <span class="counter-slides_left">1</span>&nbsp;/
+                                <span class="counter-slides_right">3</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="table-container_information">
+                        <ul class="legend-list">
+                            <li class="legend-item">
+                                <p class="legend-item_desc">№</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Дата</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Решение</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">ID диллера</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Город</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Компания/ИНН</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">ФИО</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Телефон</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">E-mail</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Комментарий</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Выбрать статус </p>
+                            </li>
+                        </ul>
+                        <div class="table-slider">
+
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103
+                                                </p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата</span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Решение</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_model">
+                                                        <option value="Vi4">Incarnet Vi4</option>
+                                                        <option value="Vi6">Incarnet Vi6</option>
+                                                        <option value="Vi8">Incarnet Vi8</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">ID диллера</span>
+                                                <p class="inner-desc blue-underline">1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <span class="desctop-hidden">Город</span>
+                                                <p class="inner-desc">Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Комментарий</span>
+                                                <input type="text" class="table-input" value="нет">
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option value="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+
+                            <button class="show-more-btn button-custom desctop-hidden">Смотреть ещё + <span></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<%= _.template(require('./../includes/footer.html'))(data) %>

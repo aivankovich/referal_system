@@ -1,0 +1,67 @@
+.registration-page {
+  margin-top: 82px;
+  margin-bottom: 100px;
+
+  .container {
+    position: relative;
+
+    &::before {
+      content: url('../favicon/reg/left.svg');
+      position: absolute;
+      left: 10%;
+      top: 10%;
+
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: url(../favicon/right.svg);
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      z-index: -1;
+
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+
+  .button-custom {
+    align-self: center;
+    padding: 0 65px;
+  }
+}
+
+.registartion-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 362px;
+
+  .input-custom {
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+
+  .select-cont {
+    margin-bottom: 20px;
+  }
+
+  .confirm {
+    margin-top: 10px;
+    text-align: center;
+    font-family: LR, Arial, sans-serif;
+    font-size: 13px;
+    color: $black;
+    line-height: 100%;
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+
+    a {
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+}

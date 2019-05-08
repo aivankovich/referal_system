@@ -1,0 +1,1520 @@
+<% var data = {
+title: "Incarnet",
+}; %>
+<%= _.template(require('./../includes/header_dep.html'))(data) %>
+<main class="new-manager_page sold-manager_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-container">
+                    <div class="table-container_top">
+                        <h1 class="page-title">Проданные заявки</h1>
+                        <div class="table-container_right">
+                            <p class="counter-slides">
+                                <span class="counter-slides_left">1</span>&nbsp;/
+                                <span class="counter-slides_right">3</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="table-container_information">
+                        <ul class="legend-list">
+                            <li class="legend-item">
+                                <p class="legend-item_desc">№</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Дата</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Решение</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">ID диллера</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Город</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Компания/ИНН</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">ФИО</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Телефон</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">E-mail</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Комментарий</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Менеджер</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Дата в работу</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Дата рестарта</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Заменить статус</p>
+                            </li>
+                            <li class="legend-item">
+                                <p class="legend-item_desc">Подтвердить продажу</p>
+                            </li>
+                        </ul>
+                        <div class="table-slider">
+
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <form method="post" class="table-slider_item">
+                                        <ul class="table-inner_list">
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">№</span>
+                                                    103</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Дата </span>
+                                                    02.11.2018</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Решение</span>
+                                                    Incarnet Vi4</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ID диллера</span>
+                                                    1000153881</p>
+                                            </li>
+                                            <li class="inner-item">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Город</span>
+                                                    Санкт-Петербург</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc ">
+                                                    <span class="desctop-hidden">Компания/ИНН</span>
+                                                    OOO NAGAR/526317984689</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">ФИО</span>
+                                                    Нагаров Адексей Михайлович</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Телефон</span>
+                                                    +7 960 264 87 95</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">E-mail</span>
+                                                    nagarov@incarnet.ru</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <p class="inner-desc">
+                                                    <span class="desctop-hidden">Комментарий</span>
+                                                    нет</p>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Менеджер</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Ротцик">А.С. Ротцик</option>
+                                                        <option value="Тросик">С.А. Тросик</option>
+
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата в работу</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Дата рестарта</span>
+                                                <div class="date-wrap date-wrap_table">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13027 13.8678V11.5468H3.37395V13.8678H1.13027ZM1.13027 10.4036V8.08258H3.37395V10.4036H1.13027ZM4.50422 13.8678V11.5468H6.74789V13.8678H4.50422ZM4.50422 10.4036V8.08258H6.74789V10.4036H4.50422ZM1.13027 6.93939V4.61838H3.37395V6.93939H1.13027ZM7.87816 13.8678V11.5468H10.1218V13.8678H7.87816ZM7.87816 10.4036V8.08258H10.1218V10.4036H7.87816ZM4.50422 6.93939V4.61838H6.74789V6.93939H4.50422ZM11.2521 13.8678V11.5468H13.4958V13.8678H11.2521ZM11.2521 10.4036V8.08258H13.4958V10.4036H11.2521ZM7.87816 6.93939V4.61838H10.1218V6.93939H7.87816ZM14.6261 13.8678V11.5468H16.8697V13.8678H14.6261ZM14.6261 10.4036V8.08258H16.8697V10.4036H14.6261ZM11.2521 6.93939V4.61838H13.4958V6.93939H11.2521ZM14.6261 6.93939V4.61838H16.8697V6.93939H14.6261ZM18 2.31468C18 1.6738 17.4939 1.15417 16.8697 1.15417H14.0525V2.31468H10.6785V1.15417H7.30459V2.31468H3.93065V1.15417H1.13027C0.506092 1.15417 0 1.6738 0 2.31468V13.8678C0 14.5087 0.506092 15.011 1.13027 15.011H16.8697C17.4939 15.011 18 14.5087 18 13.8678V2.31468ZM6.74789 0.0109863H4.50422V1.74309H6.74789V0.0109863ZM13.4958 0.0109863H11.2521V1.74309H13.4958V0.0109863Z" fill="#B1B1B1"></path>
+                                                    </svg>
+                                                    <input type="text" class="hidden-date">
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Заменить статус</span>
+                                                <div class="table-select_wrap mdi mdi-chevron-down status_blue_wrap">
+                                                    <select class="table-select_status status_blue">
+                                                        <option value="Зависшая">Зависшая</option>
+                                                        <option value="Отказ">Отказ</option>
+                                                        <option vale="Проданная">Проданная</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="inner-item full-width">
+                                                <span class="desctop-hidden">Подтвердить продажу</span>
+                                                <button type="button" class="table-button">Подтвердить</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+
+                        </div>
+                    </div>
+                    <button class="show-more-btn button-custom desctop-hidden">Смотреть ещё + <span></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<%= _.template(require('./../includes/footer.html'))(data) %>

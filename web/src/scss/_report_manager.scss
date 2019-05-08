@@ -1,0 +1,49 @@
+.report-manager_page {
+  position: relative;
+
+  .container {
+    position: relative;
+
+    &::before {
+      content: url('../favicon/report_diller/left.svg');
+      position: absolute;
+      left: -125px;
+      bottom: -270px;
+      z-index: -1;
+
+
+      @media screen and (max-width: 1280px) {
+        left: -60px;
+      }
+    }
+
+    &::after {
+      content: url('../favicon/report_diller/right.svg');
+      position: absolute;
+      right: -135px;
+      bottom: -270px;
+      z-index: -1;
+
+      @media screen and (max-width: 1280px) {
+        right: -70px;
+      }
+    }
+  }
+
+  .report-desc_first_manager {
+    width: 296px;
+  }
+
+  .report-desc_second_manager, .report-desc_third_manager, .report-desc_fourth_manager {
+    width: 17.7%;
+  }
+
+  .report-diller_item__all {
+    background: #EEEEEE;
+    margin-bottom: 20px;
+
+    .report-desc {
+      color: $black;
+    }
+  }
+}

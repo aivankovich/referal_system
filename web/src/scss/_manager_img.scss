@@ -1,0 +1,86 @@
+.new-manager_page {
+  position: relative;
+
+  .container {
+    position: relative;
+
+    &::before {
+      content: url('../favicon/new_manager/left.svg');
+      position: absolute;
+      left: -180px;
+      bottom: 0;
+      
+      @media screen and (max-width: 1280px) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: url('../favicon/new_manager/right.svg');
+      position: absolute;
+      right: -160px;
+      bottom: 0;
+      z-index: -1;
+
+      @media screen and (max-width: 1280px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.accepted-manager_page {
+  position: relative;
+
+  .container {
+    position: relative;
+
+    &::before {
+      content: url('../favicon/acepted_manager/left.svg');
+      position: absolute;
+      bottom: 0;
+      left: -160px;
+    }
+
+    &::after {
+      content: url('../favicon/acepted_manager/right.svg');
+      right: -130px;
+    }
+  }
+}
+
+.hung-manager_page {
+  position: relative;
+
+  .container {
+    &::before {
+      content: url('../favicon/hung_manager/left.svg');
+      left: -160px;
+    }
+
+    &::after {
+      content: url('../favicon/hung_manager/right.svg');
+      right: -140px;
+    }
+  }
+}
+
+.sold-manager_page {
+  .container {
+    &::before {
+      content: url('../favicon/sold_manager/left.svg');
+      left: -140px;
+    }
+
+    &::after {
+      content: url('../favicon/sold_manager/right.svg');
+      right: -130px;
+    }
+  }
+}
+
+.no-img {
+  .container::before, .container::after {
+    display: none;
+  }
+}

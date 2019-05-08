@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Incarnet">
+    <meta property="og:image" content="/favicon/favicon32.png">
+    <meta property="og:title" content="Incarnet">
+    <meta property="og:url" content="http://incarnet.undsgn.ru/">
+    <meta property="og:description" content="Incarnet">
+    <title><%=title%></title>
+    <link href="favicon/favicon16.png" type="image/x-icon" rel="shortcut icon">
+    <link href="favicon/favicon16.png" rel="apple-touch-icon" sizes="16x16">
+    <link href="favicon/favicon32.png" type="image/x-icon" rel="shortcut icon">
+    <link href="favicon/favicon32.png" rel="apple-touch-icon" sizes="32x32">
+    <link href="favicon/favicon96.png" type="image/x-icon" rel="shortcut icon">
+    <link href="favicon/favicon96.png" type="apple-touch-icon" sizes="96x96">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header container">
+    <div class="row">
+        <div class="col-lg-3 col-6">
+            <a href="/">
+                <img src="img/logo.svg" alt="Incarnet" class="mobile-hidden">
+                <img src="img/logo_mob.svg" alt="Incarnet" class="desctop-hidden mob-logo">
+            </a>
+        </div>
+        <nav class="nav-menu nav-menu_manager mobile-hidden col-lg-9">
+            <ul class="nav-menu_list nav-menu_list_manager">
+                <li class="nav-item">
+                    <a href="new_manager.html" class="button-custom manager-head_counter manager-head_counter_color seleted-btn new-btn"> Новые заявки
+                    <span class="counter">4</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="accepted_manager.html" class="nav-item_link manager-head_counter">Принятые
+                    <span class="counter">12</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="hung_manager.html" class="nav-item_link manager-head_counter">Зависшие
+                    <span class="counter">14</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="sold_manager.html" class="nav-item_link manager-head_counter">Проданные
+                        <span class="counter">14</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="abandoned_manager.html" class="nav-item_link manager-head_counter">Отказные
+                        <span class="counter">14</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="profile-list">
+                <li class="profile-item">
+                    <a href="profile_manager.html" class="avt avt_login">Ваш ID/</a>
+                    <a href="profile_manager.html" class="avt avt_login">Выход</a>
+                </li>
+                <li class="profile-item">
+                    <a href="profile_manager.html" class="reg reg_login">1000153881</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" class="desctop-hidden burger-btn col-6">Меню
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </button>
+    </div>
+</header>
+<div class="mobile-menu desctop-hidden container">
+    <div class="row">
+        <a href="/" class="col-6">
+            <img src="img/logo_mob.svg" alt="Incarnet" class="mob-logo">
+        </a>
+        <button type="button" class="close-menu mdi mdi-close col-6">Закрыть</button>
+        <div class="col-7 lined1">
+            <div class="lined1-cont">
+                <a href="profile_manager.html">Ваш ID</a>
+                <p>1000153881</p>
+            </div>
+        </div>
+        <a href="avtorization.html" class="lined2 col-5">Выйти</a>
+        <a href="new_manager.html" class="button-custom col-12 seleted-btn menu-btn_inner">Новые заявки
+            <span class="counter">4</span>
+        </a>
+        <a href="accepted_manager.html" class="button-custom col-12 menu-btn_inner">Принятые
+            <span class="counter">4</span>
+        </a>
+        <a href="hung_manager.html" class="button-custom col-12 menu-btn_inner">Зависшие
+            <span class="counter">4</span>
+        </a>
+        <a href="sold_manager.html" class="button-custom col-12 menu-btn_inner">Проданные
+            <span class="counter">4</span>
+        </a>
+        <a href="abandoned_manager.html" class="button-custom col-12 menu-btn_inner">Отказные
+            <span class="counter">4</span>
+        </a>
+        <a href="report_manager.html" class="button-custom col-12 menu-btn_inner">Отчет по заявкам
+        </a>
+    </div>
+</div>

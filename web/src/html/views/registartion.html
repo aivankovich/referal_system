@@ -1,0 +1,33 @@
+<% var data = {
+title: "Incarnet",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="registration-page">
+  <div class="container">
+    <h1 class="page-title">Регистрация</h1>
+    <div class="row justify-content-center">
+      <form class="registartion-form" method="get">
+        <div class="select-cont">
+          <select name="reg-city" class="select-custom city-select" required>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Москва">Москва</option>
+          </select>
+          <div class="mdi mdi-chevron-down"></div>
+        </div>
+        <div class="input-wrap">
+          <input type="text"  name="reg-surname" class="input-custom" placeholder="Фамилия" required>
+          <input type="text" name="req-name" class="input-custom" placeholder="Имя и отчество" required>
+        </div>
+        <input type="tel" required name="reg-tel" class="input-custom" placeholder="Телефон">
+        <input type="mail" required name="reg-mail" class="input-custom" placeholder="E-mail">
+        <input type="password" required pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="reg-pass" class="input-custom" placeholder="Пароль">
+        <input type="password" required pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="reg-pass_repeat" class="input-custom" placeholder="Повторите пароль">
+        <p class="confirm">Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь на&nbsp;обработку <a href="politic.html" target="_blank">персональных данных</a></p>
+        <button type="submit" class="button-custom seleted-btn">Регистрация</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

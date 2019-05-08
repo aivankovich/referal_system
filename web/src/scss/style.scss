@@ -1,0 +1,61 @@
+//vars
+
+$anim: all 0.2s ease-out;
+
+//colors
+
+$black: #515356;
+$grey: #B1B1B1;
+$blue: #587BC9;
+$red-valid: #F44336;
+$orange: #FF7D47;
+
+@import "materialdesignicons.min.css";
+@import '_glyphicons.scss';
+@import "slick.css";
+@import "~jquery-nice-select/scss/nice-select.scss";
+
+@import "~bootstrap/scss/bootstrap";
+@import "fonts.scss";
+@import "header.scss";
+@import "_footer.scss";
+
+
+//pages
+
+@import "_avtroziation.scss";
+@import "registration.scss";
+@import "avt.scss";
+
+//diller
+@import "report_diller.scss";
+@import "information_diller.scss";
+@import "profile_diller.scss";
+@import "new_diller.scss";
+
+//manager
+
+@import "report_manager.scss";
+@import "table.scss";
+@import "manager_img.scss";
+
+
+@import "base.scss";
+@import "_erros.scss";
+
+//index
+
+@import "_index1.scss";
+
+//media
+@import "media.scss";
+
+.offset-top-10{
+  margin-top: 10px;
+}
+.offset-left-20{
+  margin-left: 20px;
+}
+.offset-left-60{
+  margin-left: 60px;
+}

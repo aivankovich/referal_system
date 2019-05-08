@@ -1,0 +1,25 @@
+<% var data = {
+title: "Incarnet",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="avt-page">
+    <div class="container">
+        <h1 class="page-title">Выбор Личного кабинета&nbsp;для:</h1>
+        <div class="row justify-content-center">
+            <ul class="avt-list">
+                <li class="avt-item">
+                    <a href="report_diller.html">Диллеров</a>
+                </li>
+                <li class="avt-item">
+                    <a href="report_manager.html">Менеджеров</a>
+                </li>
+                <li class="avt-item">
+                    <a href="new_dep.html">Отдел продаж</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,15 @@
+<% var data = {
+title: "Incarnet",
+}; %>
+<%= _.template(require('./../includes/header_index.html'))(data) %>
+<%= _.template(require('./../includes/preloader.html'))(data) %>
+<main class="error-page container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <img src="uploads/403.svg" alt="">
+            <p class="error-desc">Регистрируйся на портале и становись участником новой реферальной программы Incarnet.</p>
+            <a href="/" class="button-custom">На главную</a>
+        </div>
+    </div>
+</main>
+<%= _.template(require('./../includes/footer.html'))(data) %>

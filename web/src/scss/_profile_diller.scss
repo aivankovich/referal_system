@@ -1,0 +1,160 @@
+.profile-diller_page {
+  position: relative;
+  overflow: hidden;
+
+  .select-cont {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .nice-select {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .container {
+    &::before {
+      content: url('../favicon/profile_diller/left.svg');
+      position: absolute;
+      left: -290px;
+      bottom: 0;
+
+      @media screen and (max-width: 1280px) {
+        left: -360px;
+      }
+    }
+
+    &::after {
+      content: url('../favicon/profile_diller/right.svg');
+      position: absolute;
+      bottom: 0;
+      right: 60px;
+      z-index: -1;
+
+      @media screen and (max-width: 1280px) {
+        right: 30px;
+      }
+    }
+  }
+
+  .input-wrap  .no-right-margin {
+    margin-right: 0;
+  }
+
+  .report-date-cont {
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 33px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: calc(100% + 60px);
+      height: 1px;
+      background: #F3F7FB;
+      bottom: 0;
+      left: -30px;
+    }
+  }
+
+  .date-id {
+    display: table-footer-group;
+  }
+
+  .date-id_title {
+    font-family: LR, Arial, sans-serif;
+    font-size: 14px;
+    color: $blue;
+    letter-spacing: 1px;
+    line-height: 100%;
+  }
+
+  .date-id_number {
+    font-family: LEB, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 100%;
+  }
+
+}
+
+.profile-diller_form {
+  margin-top: 40px;
+  position: relative;
+ margin-bottom: 85px;
+
+  .button-custom {
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0 41px;
+  }
+
+  .underline-div {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100% ;
+      height: 1px;
+      left: 0px;
+      bottom: 0;
+      background: #F3F7FB;
+    }
+  }
+
+  .page-desc {
+    margin-top: 10px;
+    max-width: 550px;
+    margin-bottom: 20px;
+  }
+
+  legend {
+    margin-bottom: 25px;
+  }
+
+  .col-lg-4 {
+    margin-bottom: 50px;
+  }
+
+  .input-custom {
+    width: 100%!important;
+    margin-bottom: 20px;
+  }
+
+  .date-wrap {
+    width: 100%;
+
+    input {
+      max-width: 100%;
+    }
+  }
+}
+
+.input-search-wrap {
+  position: relative;
+  z-index: 1;
+  input {
+    background: none;
+  }
+
+  &::before {
+    position: absolute;
+    height: 100%;
+    max-height: 45px;
+    top: 0;
+    right: 19px;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+}

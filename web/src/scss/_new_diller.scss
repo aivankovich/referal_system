@@ -1,0 +1,153 @@
+.new-diller_page {
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+
+    &::before {
+      content: url('../favicon/new_diller/left.svg');
+      position: absolute;
+      left: -350px;
+      bottom: -4%;
+
+      @media screen and (max-width: 1280px) {
+        left: -300px;
+      }
+    }
+
+    &::after {
+      content: url('../favicon/new_diller/right.svg');
+      opacity: 0.8;
+      position: absolute;
+      bottom: -4%;
+      right: -130px;
+      z-index: -1;
+
+      @media screen and (max-width: 1280px) {
+        right: -80px;
+      }
+    }
+
+  }
+
+
+
+  .report-date-cont {
+    margin-top: 83px;
+    position: relative;
+    padding-bottom: 33px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: calc(100% + 60px);
+      height: 1px;
+      left: -30px;
+      bottom: 0;
+      background: #F3F7FB;
+    }
+  }
+
+  .date-wrap {
+    border-radius: 40px;
+    border: 1px solid #ddd;
+    display: flex;
+  }
+
+  .new-diller_btn {
+    background: none;
+    padding: 8px 45px;
+    color: $black;
+    outline: none;
+  }
+
+  .new-diller-selected {
+    background: $blue;
+    color: white;
+  }
+
+  .input-custom {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .radio-form_wrap {
+    position: relative;
+  }
+
+  .lines-div {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: calc(100% + 20px);
+      height: 1px;
+      top: 0;
+      left: -10px;
+      background: #F3F7FB;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: calc(100% + 20px);
+      height: 1px;
+      bottom: 0;
+      left: -10px;
+      background: #f3f7fb;
+    }
+  }
+
+  .line-div {
+    position: relative;
+    margin-top: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: calc(100% + 30px);
+      bottom: 0;
+      left: -30px;
+      height: 1px;
+      background: #F3F7FB;
+    }
+  }
+
+  .page-desc {
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+    width: 100%;
+  }
+
+  .button-custom {
+    display: block;
+    margin: 0 auto;
+    padding: 0 41px;
+  }
+
+  .radio-label, .page-subtitle {
+    white-space: nowrap;
+  }
+}
+
+.new-diller_form {
+  margin-top: 40px;
+  display: none;
+
+  .page-subtitle {
+    margin-bottom: 25px;
+  }
+
+  .select-cont {
+    margin-bottom: 20px;
+  }
+}
+
+.new-diller_form_selected {
+  display: flex;
+}
