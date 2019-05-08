@@ -213,13 +213,16 @@ vendor/bin/codecept run functional,unit -- --coverage-html --coverage-xml
 
 You can see code coverage output under the `tests/_output` directory.
 
+Database
+-------------------
+Sorry, but no migrations. Demo database - /.mysql/db.sql
 
 FrontEnd:
 -------------------
 
 /web
 
-####Commands:
+#### Commands:
 
 npm run i - Install\Update
 npm run dev - Dev environment build
@@ -227,7 +230,7 @@ npm run build - Prod environment optimized build
 npm -i *name* --save-dev - Install new pack
 
 
-####Installed libs:
+#### Installed libs:
 
 1. babel
 2. bootstrap
